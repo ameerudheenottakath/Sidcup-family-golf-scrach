@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+    color: #fff;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+.curser{
+    height: 25px;
+    width: 25px;
+    background: #95C11E;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+.curser-blur{
+    height: 300px;
+    width: 300px;
+    background: #96c11e4f;
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+    z-index: 9;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding:0 150px;
+    gap: 45px;
+    height: 145px;
+    width: 100%;
+    cursor: pointer;
+    /* background: teal; */
+    position: fixed;
+    z-index: 99;
+}
+.btn{
+    display: flex;
+    gap: 40px;
+}
+button{
+    background: black;
+    padding: 12px;
+    border-color: #95C11E ;
+    border-radius: 50px;
+    border-width: 3px;
+}
+.nav img{
+    height: 75px;
+}
+.nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+br{
+    position:absolute;
+}
+.page1 h1{
+    font-size: 140px;
+    font-weight: 900;
+    position: relative;
+    /* padding-top: 60px; */
+    font-family: Montserrat,sans-serif;
+    line-height: 120px;
+}
+.page1 h1::before{
+    content: "EAT. DRINK. PLAY";
+    position: absolute;
+    color: black;
+    top: -5px;
+    left: -5px;
+    -webkit-text-stroke: 2px #95C11E;
+    z-index: -1;
+}
+.page1 h2{
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Montserrat,sans-serif;
+}
+.page1 p {
+    font-size: 1.2vw;
+    font-weight: 500;
+    width: 40%;
+    font-family: Montserrat,sans-serif;
+}
+.page2{
+    height: 100vh;
+    width: 100vh;
+    z-index: 10;
+}
